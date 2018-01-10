@@ -1,0 +1,19 @@
+public class terminal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		double d,b,ans;
+		System.out.print("Enter base: ");
+		b=IO.readDouble();
+		System.out.print("Enter degree: ");
+		d=IO.readDouble();
+		ans = Math.pow(b, d);
+		IO.outputDoubleAnswer(ans);
+
+
+	}
+
+

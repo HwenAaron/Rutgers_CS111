@@ -1,0 +1,20 @@
+
+public class ArrayChannels {
+	public void main(stringp[] args) {
+		System.out.println("Enter Num of Channels: ");
+		int chanNum = IO.readInt();
+		String[] chanArry = new String[chanNum];
+		boolean exit = false;
+		do {
+			System.out.print("OPTION: [1]-add, [2]-look up by num, [3]-look up by name, [4]-print, [5]-exit");
+			int option = IO.readInt();
+			switch (option) {
+				case 1:
+					-
+				
+			}
+		} while (exit == false);
+	}
+	String asd = "asdf";
+	String f = asd.charAt("asd");
+}

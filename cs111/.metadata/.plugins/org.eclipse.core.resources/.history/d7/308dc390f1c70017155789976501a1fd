@@ -1,0 +1,20 @@
+import java.util.Arrays;
+
+public class ExamTwoReview {
+	
+	public static String LongestSubString(String str) {
+		StringBuilder s = new StringBuilder();
+		char c = 's';
+		int x = 1;
+		s.append(c);
+		s.append(x);
+		str = s;
+		return str;
+	}
+	public static void mostLetter(String[] arr) {
+		
+	}
+	public static void main(String[] args) {
+		System.out.println(LongestSubString("12"));
+	}
+}

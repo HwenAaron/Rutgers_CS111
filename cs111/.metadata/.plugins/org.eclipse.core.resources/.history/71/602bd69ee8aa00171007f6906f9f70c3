@@ -1,0 +1,36 @@
+
+public class Party {
+	public static void main(String[] args) {
+		
+		double pizzaCost, sodaCost;
+		int pplCount, slicePerPerson, sodaPerPerson, sodaPerBox, slicePerPizza;
+		
+		System.out.print("People count: "); // int
+		pplCount = IO.readInt();
+		System.out.print("# of pizza slice per person: "); //int
+		slicePerPerson = IO.readint();
+		System.out.print("# of soda per person");//in
+		sodePerPerson = IO.readInt();
+		System.out.print("cost of pizza: ");//double
+		pizzaCost = IO.readDouble();
+		System.out.print("Slice per pizza: ");//int
+		slicePerPizza = IO.readInt();
+		System.out.print("Cost of Soda box: ");//idouble
+		sodaCost = IO.readDouble();
+		System.out.print("Soda per box: ");//int
+		sodaPerBox = IO.readInt();
+		
+		int number_of_Slices = pplCount*slicePerPerson;
+		double number_of_Pizza = Math.ceil(number_of_Slices / slicePerPizza);
+		double pizza_Cost = pizzaCost*number_of_Pizza;
+		
+		int number_of_Soda = pplCount*sodaPerPerson;
+		double number_of_Box = Math.ceil(number_of_Soda / sodaPerBox);
+		double soda_Cost = sodaCost * number_of_Box;
+		
+		double totalCost = soda_Cost * pizza_Cost;
+		
+		IO.outputDoubleAnswer(totalCost);
+		
+	}
+}

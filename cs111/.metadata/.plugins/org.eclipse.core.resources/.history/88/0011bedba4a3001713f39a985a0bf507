@@ -1,0 +1,37 @@
+
+public class Terminal {
+	
+	public static void main(String[] args) {
+		
+/*
+		Picasso.moveRight(4);
+		Picasso.moveDown(3);
+		Picasso.drawCircle(1);
+		Picasso.moveRight(6);
+		Picasso.drawCircle(1);
+*/		
+		
+
+		double sinVal, cosVal, tanVal, dgrSin, dgrCos, dgrTan, val;
+		System.out.print("Enter Radians: ");
+		val = IO.readDouble();
+		
+		sinVal=Math.sin(val);
+		cosVal=Math.cos(val);
+		tanVal=Math.tan(val);
+		
+		IO.outputDoubleAnswer(sinVal);
+		IO.outputDoubleAnswer(cosVal);
+		IO.outputDoubleAnswer(tanVal);
+		
+		dgrSin = (sinVal*360)/(2*Math.PI);
+		dgrCos = (cosVal*360)/(2*Math.PI);
+		dgrTan = (tanVal*360)/(2*Math.PI);
+		
+		IO.outputDoubleAnswer(dgrSin);
+		IO.outputDoubleAnswer(dgrCos);
+		IO.outputDoubleAnswer(dgrTan);		
+		
+	}
+
+}

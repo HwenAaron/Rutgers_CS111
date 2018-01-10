@@ -1,0 +1,30 @@
+
+public class Compress {
+	   public static void main(String[] args) {
+
+		      System.out.print("Enter string: ");
+		      String str = IO.readString();
+		 
+		      String compressed = "";
+		 
+		      char ch=0;
+		      int count=1;
+		      for (int x = 0; x < str.length(); x++) { 
+		         if (ch == str.charAt(x)){
+		            count = count + 1;
+		         } else {
+		            compressed = ch+compressed;
+		            if(count != 1){
+		               compressed = count+compressed;
+		            }
+		            ch = str.charAt(x);
+		            count = 1;
+		         }
+		      }
+		      compressed = ch+compressed ;
+		      if(count != 1){
+		         compressed = count+compressed;
+		      }
+		      System.out.println("Compressed: " + compressed); 
+		   }
+}

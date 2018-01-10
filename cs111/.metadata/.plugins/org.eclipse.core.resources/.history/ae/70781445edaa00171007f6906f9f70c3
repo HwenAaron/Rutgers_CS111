@@ -1,0 +1,12 @@
+
+public class Terminal {
+	
+	public static void main(String[] args) {
+		
+		
+		double a = 123.556;
+		double ans = Math.round(a);
+		System.out.println((ans/100)/100);
+	}
+
+}

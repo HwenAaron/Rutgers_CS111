@@ -1,0 +1,12 @@
+public class terminal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.print("Enter int: ");
+		int num = IO.readInt();
+		IO.outputIntAnswer(num);
+				
+	}
+
+}

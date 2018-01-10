@@ -1,0 +1,25 @@
+import java.util.*;
+public class PigLatin {
+	
+	public static String translate (String original){
+		char[] vowel = {'a','e','i','o','u'};
+		for(int i = 0; i<vowel.length; i++) {
+			if (original.charAt(0)==vowel[i] {
+				return original+"vai";
+			}
+			else {
+				String firstChar = original.substring(0, 1);
+				String rest = original.substring(1, original.length()-1);
+				return rest+firstChar+"ai";
+				
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s= "cow";
+		translate(s);
+	}
+
+}

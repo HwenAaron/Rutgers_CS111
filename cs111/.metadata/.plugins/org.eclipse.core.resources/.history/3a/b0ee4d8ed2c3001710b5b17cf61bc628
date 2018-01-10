@@ -1,0 +1,21 @@
+
+public class PigLatin {
+	
+	public static String translate (String original){
+		char[] vowel = {'a','e','i','o','u'};
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char[] vowel = {'a','e','i','o','u'};
+		String s = "anime";
+		if (s.charAt(0) == vowel[0] ) {
+			System.out.println(s.charAt(0));
+		}
+		else {
+			System.out.println("FAIL");
+		}
+	}
+
+}

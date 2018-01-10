@@ -1,0 +1,7 @@
+
+public class Multiply {
+	public static void main(String[] args) {
+		long x = 1999999999;
+		System.out.println(x);
+	}
+}

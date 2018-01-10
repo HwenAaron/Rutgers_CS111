@@ -1,0 +1,14 @@
+
+public class Terminal {
+	
+	public static void main(String[] args) {
+		System.out.println("Enter Numberb: ");
+		int sum = 0;
+		int ceil=IO.readInt();
+		for(int i = 0; i<ceil; i++) {
+			sum+=i;
+		}
+		System.out.println(sum);
+	}
+
+}

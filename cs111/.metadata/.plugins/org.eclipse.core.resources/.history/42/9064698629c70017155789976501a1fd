@@ -1,0 +1,45 @@
+import java.util.Arrays;
+
+public class ExamTwoReview {
+	
+	public static String LongestSubString(String str) {
+		String s;
+		int longest = 1;
+		char c = str.charAt(0);
+		for (int i =0 ;i<str.length()-1; i++) {
+			int curLong = 1;
+			if (str.charAt(i) == str.charAt(i+1)) {
+				curLong++;
+				if (curLong > longest) {
+					longest = curLong; 
+					c = str.charAt(i); 
+				}
+			}
+		}
+		StringBuilder sb = new StringBuilder();
+		sb.append(longest);
+		sb.append(c);
+		s = sb.toString();
+		return s; 
+	}
+	public static void mostLetter(String[] arr) {
+		int len = 1;
+		for (int i = 1; i<=arr.length; i++) {
+			if(arr[i].length()>len) {
+				len = arr[i].length(); 
+			} else {
+				System.out.println(len);
+			}
+			System.out.println(len);
+		}
+	}
+	public static void main(String[] args) {
+		/*
+		System.out.println("Enter String: ");
+		String str = IO.readString();
+		IO.outputStringAnswer(LongestSubString(str));
+		*/
+		String[] arry = {"asdf", "asd", "as"};
+		mostLetter(arry);-
+	}
+}

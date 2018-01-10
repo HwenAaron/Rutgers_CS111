@@ -1,0 +1,13 @@
+
+public class Terminal {
+	
+	public static void main(String[] args) {
+		
+	
+		Picasso.moveRight(7);
+		Picasso.moveDown(4);
+		Picasso.drawCircle(2);
+		
+	}
+
+}

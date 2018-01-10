@@ -1,0 +1,25 @@
+
+public class WordCount {
+	
+	publi static int countWords(String original, int maxLength) {
+		String[] words = original.split("\\s+");
+		int count =0;
+		for (int i = 0; i < words.length; i++) {
+		    words[i] = words[i].replaceAll("[^\\w]", "");
+		    if (words[i].length()>=maxLength) {
+		    	count++;
+		    } 
+		}
+		return count;
+	}	
+	
+	public static void main(String[] args) {
+		
+		System.out.print(" Enter string: ");
+		String s = IO.readString();
+		System.out.print("Enter max length: ");
+		int x = IO.readInt();
+		IO.outputIntAnswer(countWords(s, x));
+		
+	}
+}

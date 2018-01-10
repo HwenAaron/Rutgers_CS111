@@ -1,0 +1,11 @@
+
+public class Multiply {
+	public static void main(String[] args) {
+		System.out.print("Enter Number: ");
+		int num1 = IO.readInt();
+		System.out.print("Enter Number: ");
+		int num2 = IO.readInt();
+		int ans = num1*num2;
+		IO.outputIntAnswer(ans);
+	}
+}

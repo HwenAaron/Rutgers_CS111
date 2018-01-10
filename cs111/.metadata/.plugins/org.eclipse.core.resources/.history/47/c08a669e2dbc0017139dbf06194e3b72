@@ -1,0 +1,9 @@
+
+public class Calc {
+	public static void main(String[] srgs) {
+		double n = 5.0;
+		double ans = (Math.pow(n, 2.0)-28.0);
+		System.out.println(ans);
+		System.out.println(n);
+	}
+}

@@ -1,0 +1,18 @@
+
+public class Terminal {
+	
+	public static void main(String[] args) {
+		
+		System.out.print("Ener number inputs: ");
+		int numOfIntput = IO.readInt();
+		double max = 0;
+		for(int i = 0; i<numOfIntput; i++) {
+			System.out.println("Enter num: ");
+			double num = IO.readDouble();
+			if (num>max) {
+				IO.outputDoubleAnswer(max);
+			}
+		}
+	}
+
+}

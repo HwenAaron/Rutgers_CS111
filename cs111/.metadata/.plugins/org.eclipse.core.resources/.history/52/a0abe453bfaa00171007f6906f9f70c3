@@ -1,0 +1,14 @@
+
+public class Multiply {
+	public static void main(String[] args) {
+		int tickets1 = 12;
+		int tickets2 = 13;
+		int tickets3 = 14;
+		
+		int class1 = 1;
+		int class2 = 2;
+		int class3 = 3;
+		
+		System.out.println((tickets1 + tickets2 + tickets3)/(class1 + class2 + class3));
+	}
+}

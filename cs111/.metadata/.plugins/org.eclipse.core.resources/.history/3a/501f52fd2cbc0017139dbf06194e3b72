@@ -1,0 +1,12 @@
+
+public class FaceState {
+	public static void main(String[] args) {
+		
+		Face f1 = new Face();
+		
+		System.out.print("enter exp: ");
+		String exp = IO.readString();
+		
+		f1.setExpression(exp);
+	}
+}

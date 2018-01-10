@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+public class ArrayList {
+	public static void main(String[] args) {
+		//declaring arraylist
+		ArrayList<String> grocery = new ArrayList<String>();
+		grocery.add("Sugar");
+		grocery.add("asdf");
+		System.out.println(gorcery);
+		
+	}
+}

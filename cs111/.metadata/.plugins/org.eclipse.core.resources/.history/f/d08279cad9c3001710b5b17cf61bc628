@@ -1,0 +1,24 @@
+
+public class PigLatin {
+	public static String translate(String original) {
+		char[] vowel = {'a','A','e','E','i','I','o','O','u','U'};
+		String s="";
+		for (int i = 0; i<vowel.length; i++) {
+			if (original.charAt(0)==vowel[i]){
+				s = original+"vai";
+				break;
+			}else {	
+				String firstChar = original.substring(0, 1);
+				String rest = original.substring(1, original.length());
+				s = rest+firstChar+"ai";
+				
+			}
+		}
+		return s;
+	}
+	public static void main(String[] args) {
+		System.out.print("Enter word: ");
+		String s= IO.readString();
+		IO.outputStringAnswer(translate(s));
+	}
+}

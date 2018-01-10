@@ -1,0 +1,24 @@
+public class terminal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int ans, hr, min;
+		String input;
+		System.out.print("What do you want to convert: ");
+		input = IO.readString();
+		if (input =="hr to min") {
+			System.out.print("hr = ");
+			hr = IO.readInt();
+			ans = hr * 60;
+			System.out.println(ans);
+		}
+		if (input =="min to hr") {
+			System.out.print("min = ");
+			min = IO.readInt();
+			ans = min / 60;
+			System.out.println(ans);
+		}
+	}
+
+}

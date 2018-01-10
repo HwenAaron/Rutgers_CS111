@@ -1,0 +1,12 @@
+
+public class Calc {
+	public static void main(String[] srgs) {
+		double n = 5.0;
+		double ans1 = (Math.pow(n, 2)-28);
+		double ans2 = 2*n;
+		double ans3 = ans1/ans2;
+		double ansFin = n - ans3;
+		System.out.println(ansFin);
+		System.out.println(n);
+	}
+}

@@ -1,0 +1,19 @@
+
+public class Terminal {
+	
+	public static void main(String[] args) {
+		
+		
+		double a = 123.556;
+		double round = a*100;
+		System.out.println(round);
+		double sol = Math.ceil(round);
+		System.out.println(sol);
+		double ans = sol/100;
+		System.out.println(ans);
+		
+		double answer = Math.ceil(a*100)/100;
+		System.out.println(answer);
+	}
+
+}

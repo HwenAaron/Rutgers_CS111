@@ -1,0 +1,17 @@
+
+public class WordCount {
+	//public static int countWords(String original, int maxLength) {
+		//String[] words = original.split("\\s+");
+		//for (int i = 0; i < words.length; i++) {
+			//words[i] = words[i].replaceAll("[^a-zA-Z]", "").toLowerCase();
+		//}
+	//}
+	
+	public static void main(String[] args) {
+		String original ="This is @a cool&? anime.";
+		String[] words = original.split("\\s+");
+		for (int i = 0; i < words.length; i++) {
+			words[i] = words[i].replaceAll("[^a-zA-Z]", "").toLowerCase();
+			System.out.print(words[i]);
+	}
+}

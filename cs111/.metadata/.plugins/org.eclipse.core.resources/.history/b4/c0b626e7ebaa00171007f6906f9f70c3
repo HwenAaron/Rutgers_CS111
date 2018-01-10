@@ -1,0 +1,14 @@
+
+public class Terminal {
+	
+	public static void main(String[] args) {
+		
+		
+		double a =10;
+		double b = 6;
+		double calc = (double)(a/b);
+		double sol = Math.ceil(calc);
+		System.out.println(sol);
+	}
+
+}

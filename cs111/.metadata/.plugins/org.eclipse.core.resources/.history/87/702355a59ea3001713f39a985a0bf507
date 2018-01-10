@@ -1,0 +1,10 @@
+
+public class Terminal {
+	
+	public static void main(String[] args) {
+		
+		Picasso.drawCircle(50);
+		
+	}
+
+}
